@@ -44,6 +44,7 @@ public class Tick_tracker : MonoBehaviour
         if(current_beat < story_beats.Length-1) {
             current_beat += 1;
             beat_prompt.text = story_beats[current_beat];
+            StartCoroutine(FadeImage(true));
         } else {
             tick_display.text = "Story is over";
             beat_prompt.text = "Sit down...";
@@ -51,5 +52,30 @@ public class Tick_tracker : MonoBehaviour
         }
     }
 
+IEnumerator FadeImage(bool fadeAway)
+    {
+        // fade from opaque to transparent
+        if (fadeAway)
+        {
+            // loop over 1 second backwards
+            for (float i = 2; i >= 0; i -= Time.deltaTime)
+            {
+                // set color with i as alpha
+                beat_prompt.color = new Color(1, 1, 1, i);
+                yield return null;
+            }
+        }
+        // fade from transparent to opaque
+        else
+        {
+            // loop over 1 second
+            for (float i = 0; i <= 2; i += Time.deltaTime)
+            {
+                // set color with i as alpha
+                beat_prompt.color = new Color(1, 1, 1, i);
+                yield return null;
+            }
+        }
+    }
 }
  
