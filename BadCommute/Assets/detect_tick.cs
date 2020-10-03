@@ -8,15 +8,16 @@ public class detect_tick : MonoBehaviour
     public GameObject tick_manager;
 
     void Start() {
-         GameObject.FindObjectWithTag("Player");
+         tick_manager = UnityEngine.GameObject.FindWithTag("PromptManager");
     }
 
     void OnTriggerExit(Collider  collision)
     {
-        Debug.Log("TRIGGER!!!!");
         if (collision.tag == "Player")
         {
-            tick_manager.tick_value += 10;
+            tick_manager.GetComponent<Tick_tracker>().external_tick_update(3);
+        } else {
+            Debug.Log("Something is a miss");
         }
     }
 }
