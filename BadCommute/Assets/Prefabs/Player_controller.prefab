@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 236830730282911540}
   - component: {fileID: 236830730285961652}
   - component: {fileID: 236830730288114484}
+  - component: {fileID: 440406663}
   m_Layer: 0
   m_Name: Player_controller
   m_TagString: Untagged
@@ -290,6 +291,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &440406663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236830730288935636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d84f5f05000d6b4dab724443dff7af8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerCam: {fileID: 236830730290442484}
+  CastRadius: 0.1
+  CastDistance: 2
+  TicketCount: 0
+  LookingAtInteractable: 0
 --- !u!1 &236830730288935638
 GameObject:
   m_ObjectHideFlags: 0
