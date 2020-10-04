@@ -9,6 +9,7 @@ public class Tick_tracker : MonoBehaviour
     public Text tick_display;
     public Text beat_prompt;
     public Text interact_prompt;
+    public Text current_ticket_prompt;
     private int current_beat;
     public string[] story_beats = {
             "Get off the train and go home...",
@@ -38,6 +39,10 @@ public class Tick_tracker : MonoBehaviour
             current_beat += 1;
             tick_value = 0;
         }
+    }
+
+    public void external_ticket_update(Ticket ticket){
+        current_ticket_prompt.text = ticket.description;
     }
 
     public void prompt_user(string prompt){

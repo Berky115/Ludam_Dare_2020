@@ -25,6 +25,7 @@ public class Interactable : MonoBehaviour
         Interact.Invoke();
         if (IsPickUp)
         {
+            prompt_manager.GetComponent<Tick_tracker>().external_ticket_update(ticket);
             GameObject.Destroy(gameObject);
             prompt_manager.GetComponent<Tick_tracker>().prompt_user("");
         }
