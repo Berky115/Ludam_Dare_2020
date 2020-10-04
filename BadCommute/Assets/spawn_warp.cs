@@ -20,19 +20,21 @@ public class spawn_warp : MonoBehaviour
             Debug.Log("Player found");
             
             int rand = Random.Range(0, respawns.Length);
+            Debug.Log("--------------------------------------");
+            Debug.Log(rand);
+            Debug.Log("--------------------------------------");
             respawns[rand].SetActive(false);
             other.transform.position = respawns[rand].transform.position;
             
-            ActivationRoutine(respawns[rand]);
         } else {
             Debug.Log("Not a player");
         }
 
  }
 
-  private IEnumerator ActivationRoutine(GameObject spawn)
-     {        
-         yield return new WaitForSeconds(3);
-         spawn.SetActive(true);
-     }
+//   private IEnumerator ActivationRoutine(GameObject spawn)
+//      {        
+//          yield return new WaitForSeconds(3);
+//          spawn.SetActive(true);
+//      }
 }

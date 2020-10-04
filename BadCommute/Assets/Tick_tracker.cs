@@ -5,30 +5,31 @@ using UnityEngine.UI;
 
 public class Tick_tracker : MonoBehaviour
 {
+    public int beat_time;
     public int tick_value;
     public Text tick_display;
     public Text beat_prompt;
     public Text interact_prompt;
     public Text current_ticket_prompt;
-    private int current_beat;
+    public int current_beat;
     public string[] story_beats = {
             "Get off the train and go home...",
-            "Get off the train",
-            "Why can't you get off the train?",
+            "Find a ticket.",
             "gETT___OfF_train",
+            "Why can't you get off the train?",
             "rentrer chez soi",
-            "it's a train bruh...",
             "Go home...",
-            "Sit down"
+            "Where are you going?",
+            "Find a way off the train",
+            "Hurry up...",
+            "Go home"
         };
     void Start()
     {
         tick_value = 0;
         current_beat = 0;
         tick_display.text = "Tick value at :" + tick_value.ToString();
-        beat_prompt.text = story_beats[tick_value];
-        //automatically move to next tick over time.
-         InvokeRepeating("incrememnt_tick", 2.0f, 2.0f);
+         InvokeRepeating("incrememnt_tick", 0.0f,beat_time);
     }
 
     public void external_tick_update(int value = 5){
@@ -52,8 +53,8 @@ public class Tick_tracker : MonoBehaviour
     void incrememnt_tick()
     {
         if(current_beat < story_beats.Length-1) {
-            current_beat += 1;
             beat_prompt.text = story_beats[current_beat];
+            current_beat += 1;
             StartCoroutine(FadeImage(true));
         } else {
             tick_display.text = "Story is over";
