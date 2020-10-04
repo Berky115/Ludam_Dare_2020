@@ -7,6 +7,7 @@ public class PlayerInteract : MonoBehaviour
     public Camera PlayerCam;
     public float CastRadius = 0.1f;
     public float CastDistance = 3;
+    public GameObject ticket_view;
 
     public int TicketCount = 0;
 
@@ -16,10 +17,17 @@ public class PlayerInteract : MonoBehaviour
     void Start()
     {
         prompt_manager = UnityEngine.GameObject.FindWithTag("PromptManager");
+        ticket_view = UnityEngine.GameObject.Find("current_ticket");
+        ticket_view.SetActive(!ticket_view.activeSelf);
     }
 
     void Update()
     {
+        if (Input.GetButtonDown("Fire2"))
+        {
+           ticket_view.SetActive(!ticket_view.activeSelf);
+        }
+
         Ray ray = PlayerCam.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit, CastDistance))
