@@ -7,11 +7,17 @@ public class Interactable : MonoBehaviour
 {
     public bool IsPickUp = false;
     public UnityEvent Interact;
+    public GameObject prompt_manager;
+    public Ticket ticket;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        prompt_manager = UnityEngine.GameObject.FindWithTag("PromptManager");
+    }
+
+    public void promptInteraction(){
+        prompt_manager.GetComponent<Tick_tracker>().prompt_user(ticket.ticket_name);
     }
 
     public void DoInteract(PlayerInteract player)
@@ -19,10 +25,8 @@ public class Interactable : MonoBehaviour
         Interact.Invoke();
         if (IsPickUp)
         {
-            if (player.AddInventory())
-            {
-                GameObject.Destroy(gameObject);
-            }
+            GameObject.Destroy(gameObject);
+            prompt_manager.GetComponent<Tick_tracker>().prompt_user("");
         }
     }
 }

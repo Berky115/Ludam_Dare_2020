@@ -307,7 +307,7 @@ MonoBehaviour:
   CastRadius: 0.1
   CastDistance: 2
   TicketCount: 0
-  LookingAtInteractable: 0
+  prompt_manager: {fileID: 0}
 --- !u!1 &236830730288935638
 GameObject:
   m_ObjectHideFlags: 0

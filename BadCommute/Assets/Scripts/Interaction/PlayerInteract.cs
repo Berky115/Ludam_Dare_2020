@@ -6,75 +6,52 @@ public class PlayerInteract : MonoBehaviour
 {
     public Camera PlayerCam;
     public float CastRadius = 0.1f;
-    public float CastDistance = 1;
+    public float CastDistance = 3;
 
     public int TicketCount = 0;
 
-    public bool LookingAtInteractable = false;
+    public GameObject prompt_manager;
 
 
-    // Start is called before the first frame update
     void Start()
     {
-
+        prompt_manager = UnityEngine.GameObject.FindWithTag("PromptManager");
     }
 
-    // Update is called once per frame
     void Update()
     {
-        LookingAtInteractable = false;
-
         Ray ray = PlayerCam.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
-        //int layerMask = 1 << 5;
-        //layerMask = ~layerMask;
-
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit, CastDistance))
-        //if(Physics.Raycast(ray, out hit, CastDistance, layerMask))
-        //if(Physics.SphereCast(ray, CastRadius, out hit, CastDistance))
         {
             Debug.DrawRay(PlayerCam.transform.position, PlayerCam.transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
-
 
             Interactable iteractObject = hit.collider.GetComponent<Interactable>();
             if (iteractObject != null)
             {
                 //cast found an interactable object, do anything related to that here.
-                InteractHover();
+                InteractHover(iteractObject);
 
                 //Interact button was pressed (using "Fire1" for now, should be left mose click.)
                 if (Input.GetButton("Fire1"))
                 {
                     Interact(iteractObject);
                 }
+            } else {
+                 prompt_manager.GetComponent<Tick_tracker>().prompt_user("");
             }
         }
-
     }
 
     //Things that happen when hovering over Interactable Objects
-    private void InteractHover()
+    private void InteractHover(Interactable interact)
     {
-        LookingAtInteractable = true;
+        interact.promptInteraction();
     }
+
 
     private void Interact(Interactable interact)
     {
-        //Some kind of pause?
-
         interact.DoInteract(this);
-    }
-
-    public bool AddInventory()
-    {
-        if(TicketCount > 0)
-        {
-            return false;
-        }
-        else
-        {
-            TicketCount++;
-            return true;
-        }
     }
 }
