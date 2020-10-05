@@ -33,7 +33,7 @@ public class CartManager : MonoBehaviour
     {
         //Get data from Prompt manager
         int currentStoryBeat = PromptManager.current_beat;
-        int maxBeats = PromptManager.story_beats.Length;
+        int maxBeats = PromptManager.story_beats.Length-1;
 
 
         //Update Phantom Spawning
@@ -42,7 +42,7 @@ public class CartManager : MonoBehaviour
         if(currentStoryBeat > 1)
         {
             //Activate the appropriate Phantoms
-            spawnGroupSize = PhantomList.Length / (maxBeats - 1);
+            spawnGroupSize = PhantomList.Length / (maxBeats);
             totalToSpawn = (spawnGroupSize * currentStoryBeat) - 1;
         }
         else if (currentStoryBeat == maxBeats)

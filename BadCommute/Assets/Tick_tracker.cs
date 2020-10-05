@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Tick_tracker : MonoBehaviour
 {
     public int beat_time;
+    public GameObject lightSources;
     public int tick_value;
     public Text tick_display;
     public Text beat_prompt;
@@ -50,8 +52,10 @@ public class Tick_tracker : MonoBehaviour
 
     public bool external_figure_interact(){
         if(current_ticket != null){
-        if(current_ticket.name == "Real_ticket") {
+        if(current_ticket.name == "valid_ticket") {
             beat_prompt.text = "Have a seat.";
+            lightSources.SetActive(false);
+            SceneManager.LoadScene (sceneName:"ending");
             return true;
         } else if(current_ticket.name == "Void_ticket") {
             beat_prompt.text = "This ticket is too old to use...";
