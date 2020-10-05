@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: valid_ticket
   m_EditorClassIdentifier: 
   ticket_name: Valid ticket
-  description: a genuine ticket!
+  description: A genuine ticket.
   icon: {fileID: 0}

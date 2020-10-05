@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: New Ticket
   m_EditorClassIdentifier: 
   ticket_name: Phone Book
-  description: Why are you carry that?
+  description: Seems a little dated...
   icon: {fileID: 0}
