@@ -467,6 +467,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 236830730288114484, guid: 90bb9292601d86c498e0f91577c63aaf, type: 3}
+      propertyPath: m_Volume
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 236830730288836340, guid: 90bb9292601d86c498e0f91577c63aaf, type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.95
@@ -526,6 +530,10 @@ PrefabInstance:
     - target: {fileID: 236830730290442484, guid: 90bb9292601d86c498e0f91577c63aaf, type: 3}
       propertyPath: m_BackGroundColor.b
       value: 0.38679248
+      objectReference: {fileID: 0}
+    - target: {fileID: 236830730290442484, guid: 90bb9292601d86c498e0f91577c63aaf, type: 3}
+      propertyPath: near clip plane
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90bb9292601d86c498e0f91577c63aaf, type: 3}
@@ -2050,6 +2058,10 @@ PrefabInstance:
     - target: {fileID: 3173894164376341883, guid: ef111016a70dffe4aabe0eafbcc55c46, type: 3}
       propertyPath: m_Name
       value: cart_spawn_1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3173894164867372233, guid: ef111016a70dffe4aabe0eafbcc55c46, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3173894165214982783, guid: ef111016a70dffe4aabe0eafbcc55c46, type: 3}
       propertyPath: m_TagString
