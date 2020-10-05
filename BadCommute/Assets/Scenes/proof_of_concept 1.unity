@@ -365,8 +365,15 @@ MonoBehaviour:
   Interact:
     m_PersistentCalls:
       m_Calls: []
+  InteractSuccess:
+    m_PersistentCalls:
+      m_Calls: []
+  InteractFail:
+    m_PersistentCalls:
+      m_Calls: []
   prompt_manager: {fileID: 0}
   ticket: {fileID: 11400000, guid: 271ef1bef98d88c4fac8e4d64f040f28, type: 2}
+  InteractText: Interact [Left Click]
 --- !u!65 &163294728
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1204,8 +1211,15 @@ MonoBehaviour:
   Interact:
     m_PersistentCalls:
       m_Calls: []
+  InteractSuccess:
+    m_PersistentCalls:
+      m_Calls: []
+  InteractFail:
+    m_PersistentCalls:
+      m_Calls: []
   prompt_manager: {fileID: 0}
   ticket: {fileID: 11400000, guid: 271ef1bef98d88c4fac8e4d64f040f28, type: 2}
+  InteractText: Interact [Left Click]
 --- !u!65 &553332247
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1380,8 +1394,15 @@ MonoBehaviour:
   Interact:
     m_PersistentCalls:
       m_Calls: []
+  InteractSuccess:
+    m_PersistentCalls:
+      m_Calls: []
+  InteractFail:
+    m_PersistentCalls:
+      m_Calls: []
   prompt_manager: {fileID: 0}
   ticket: {fileID: 11400000, guid: 271ef1bef98d88c4fac8e4d64f040f28, type: 2}
+  InteractText: Interact [Left Click]
 --- !u!65 &556409590
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1937,8 +1958,15 @@ MonoBehaviour:
   Interact:
     m_PersistentCalls:
       m_Calls: []
+  InteractSuccess:
+    m_PersistentCalls:
+      m_Calls: []
+  InteractFail:
+    m_PersistentCalls:
+      m_Calls: []
   prompt_manager: {fileID: 0}
   ticket: {fileID: 11400000, guid: 271ef1bef98d88c4fac8e4d64f040f28, type: 2}
+  InteractText: Interact [Left Click]
 --- !u!65 &822108590
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2052,8 +2080,15 @@ MonoBehaviour:
   Interact:
     m_PersistentCalls:
       m_Calls: []
+  InteractSuccess:
+    m_PersistentCalls:
+      m_Calls: []
+  InteractFail:
+    m_PersistentCalls:
+      m_Calls: []
   prompt_manager: {fileID: 0}
   ticket: {fileID: 11400000, guid: 271ef1bef98d88c4fac8e4d64f040f28, type: 2}
+  InteractText: Interact [Left Click]
 --- !u!65 &925088362
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2172,8 +2207,15 @@ MonoBehaviour:
   Interact:
     m_PersistentCalls:
       m_Calls: []
+  InteractSuccess:
+    m_PersistentCalls:
+      m_Calls: []
+  InteractFail:
+    m_PersistentCalls:
+      m_Calls: []
   prompt_manager: {fileID: 0}
   ticket: {fileID: 11400000, guid: 271ef1bef98d88c4fac8e4d64f040f28, type: 2}
+  InteractText: Interact [Left Click]
 --- !u!65 &951074619
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2801,6 +2843,14 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3722930846293076969, guid: ef111016a70dffe4aabe0eafbcc55c46, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201989988628087348, guid: ef111016a70dffe4aabe0eafbcc55c46, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6754397187813839516, guid: ef111016a70dffe4aabe0eafbcc55c46, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -3261,8 +3311,15 @@ MonoBehaviour:
   Interact:
     m_PersistentCalls:
       m_Calls: []
+  InteractSuccess:
+    m_PersistentCalls:
+      m_Calls: []
+  InteractFail:
+    m_PersistentCalls:
+      m_Calls: []
   prompt_manager: {fileID: 0}
   ticket: {fileID: 11400000, guid: 271ef1bef98d88c4fac8e4d64f040f28, type: 2}
+  InteractText: Interact [Left Click]
 --- !u!65 &1532873048
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3562,7 +3619,7 @@ PrefabInstance:
       objectReference: {fileID: 1533677648}
     - target: {fileID: 8267169317253773055, guid: 338725ae0f896464ebdeabf0f5028f9e, type: 3}
       propertyPath: beat_time
-      value: 30
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8267169317253773055, guid: 338725ae0f896464ebdeabf0f5028f9e, type: 3}
       propertyPath: story_beats.Array.data[8]
@@ -3621,8 +3678,15 @@ MonoBehaviour:
   Interact:
     m_PersistentCalls:
       m_Calls: []
+  InteractSuccess:
+    m_PersistentCalls:
+      m_Calls: []
+  InteractFail:
+    m_PersistentCalls:
+      m_Calls: []
   prompt_manager: {fileID: 0}
   ticket: {fileID: 11400000, guid: 271ef1bef98d88c4fac8e4d64f040f28, type: 2}
+  InteractText: Interact [Left Click]
 --- !u!65 &1598155322
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3832,8 +3896,15 @@ MonoBehaviour:
   Interact:
     m_PersistentCalls:
       m_Calls: []
+  InteractSuccess:
+    m_PersistentCalls:
+      m_Calls: []
+  InteractFail:
+    m_PersistentCalls:
+      m_Calls: []
   prompt_manager: {fileID: 0}
   ticket: {fileID: 11400000, guid: 271ef1bef98d88c4fac8e4d64f040f28, type: 2}
+  InteractText: Interact [Left Click]
 --- !u!65 &1735589398
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4053,8 +4124,15 @@ MonoBehaviour:
   Interact:
     m_PersistentCalls:
       m_Calls: []
+  InteractSuccess:
+    m_PersistentCalls:
+      m_Calls: []
+  InteractFail:
+    m_PersistentCalls:
+      m_Calls: []
   prompt_manager: {fileID: 0}
   ticket: {fileID: 11400000, guid: efb7fb9ad45a68f44b6c6e8f14632814, type: 2}
+  InteractText: Interact [Left Click]
 --- !u!65 &1813896533
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4646,8 +4724,15 @@ MonoBehaviour:
   Interact:
     m_PersistentCalls:
       m_Calls: []
+  InteractSuccess:
+    m_PersistentCalls:
+      m_Calls: []
+  InteractFail:
+    m_PersistentCalls:
+      m_Calls: []
   prompt_manager: {fileID: 0}
   ticket: {fileID: 11400000, guid: 271ef1bef98d88c4fac8e4d64f040f28, type: 2}
+  InteractText: Interact [Left Click]
 --- !u!65 &2116169653
 BoxCollider:
   m_ObjectHideFlags: 0

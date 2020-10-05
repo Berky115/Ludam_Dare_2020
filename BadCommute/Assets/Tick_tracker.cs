@@ -55,7 +55,8 @@ public class Tick_tracker : MonoBehaviour
         if(current_ticket.name == "valid_ticket") {
             beat_prompt.text = "Have a seat.";
             lightSources.SetActive(false);
-            SceneManager.LoadScene (sceneName:"ending");
+            current_ticket = null;
+            //SceneManager.LoadScene (sceneName:"ending");
             return true;
         } else if(current_ticket.name == "Void_ticket") {
             beat_prompt.text = "This ticket is too old to use...";
