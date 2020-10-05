@@ -45,7 +45,9 @@ public class CartManager : MonoBehaviour
             spawnGroupSize = PhantomList.Length / (maxBeats);
             totalToSpawn = (spawnGroupSize * currentStoryBeat) - 1;
         }
-        else if (currentStoryBeat == maxBeats)
+
+        //Show all phantoms if we hit the end
+        if (currentStoryBeat == maxBeats)
         {
             totalToSpawn = PhantomList.Length;
         }

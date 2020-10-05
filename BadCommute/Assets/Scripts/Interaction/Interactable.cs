@@ -22,7 +22,7 @@ public class Interactable : MonoBehaviour
 
     public void promptInteraction(){
         if(isFigure){
-            prompt_manager.GetComponent<Tick_tracker>().prompt_user("Give ticket to passenger");
+            prompt_manager.GetComponent<Tick_tracker>().prompt_user("Give ticket to passenger [Left Click]");
         } else {
             prompt_manager.GetComponent<Tick_tracker>().prompt_user(ticket.ticket_name);
         }
