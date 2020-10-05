@@ -178,7 +178,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8bc94ec6ed537e743b481638bdcd503d, type: 3}
   - {fileID: 8300000, guid: 5a9383dda6cabc047b7a297602e93eb4, type: 3}
   m_JumpSound: {fileID: 0}
-  m_LandSound: {fileID: 8300000, guid: 3b09d59f4499d45428baa7a21e954296, type: 3}
+  m_LandSound: {fileID: 0}
 --- !u!54 &236830730285961652
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -352,8 +352,8 @@ Camera:
   m_GameObject: {fileID: 236830730288935638}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0.019607844}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 0.019607844}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -422,9 +422,9 @@ MonoBehaviour:
   m_RendererIndex: -1
   m_VolumeLayerMask:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 55
   m_VolumeTrigger: {fileID: 0}
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0

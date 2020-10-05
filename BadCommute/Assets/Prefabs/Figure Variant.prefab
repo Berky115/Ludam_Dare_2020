@@ -45,28 +45,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsPickUp: 0
-  isFigure: 1
   Interact:
     m_PersistentCalls:
       m_Calls: []
-  prompt_manager: {fileID: 0}
-  ticket: {fileID: 0}
---- !u!114 &200116348
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6864384298753039347}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65486b03f13072940b1ce3dc34be665d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Interact:
-    m_PersistentCalls:
-      m_Calls: []
-  prompt_manager: {fileID: 0}
 --- !u!1001 &6017469871963285154
 PrefabInstance:
   m_ObjectHideFlags: 0

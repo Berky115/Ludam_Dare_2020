@@ -6,9 +6,10 @@ public class spawn_warp : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject[] respawns;
+    public bool head;
     void Start()
     {
-        respawns = GameObject.FindGameObjectsWithTag("valid_spawn");
+       
         Debug.Log(respawns.Length);
     }
 
@@ -18,12 +19,14 @@ public class spawn_warp : MonoBehaviour
      if (other.tag == "Player")
         {
             Debug.Log("Player found");
-            
+            if(head){
+                respawns = GameObject.FindGameObjectsWithTag("tail_spawn");
+            } else {
+                 respawns = GameObject.FindGameObjectsWithTag("valid_spawn");
+            }
             int rand = Random.Range(0, respawns.Length);
-            Debug.Log("--------------------------------------");
-            Debug.Log(rand);
-            Debug.Log("--------------------------------------");
             respawns[rand].SetActive(false);
+             StartCoroutine(ActivationRoutine(respawns[rand]));
             other.transform.position = respawns[rand].transform.position;
             
         } else {
@@ -32,9 +35,11 @@ public class spawn_warp : MonoBehaviour
 
  }
 
-//   private IEnumerator ActivationRoutine(GameObject spawn)
-//      {        
-//          yield return new WaitForSeconds(3);
-//          spawn.SetActive(true);
-//      }
+  private IEnumerator ActivationRoutine(GameObject spawn)
+     {        
+         Debug.Log("STARTING ROUTINE");
+         yield return new WaitForSeconds(3);
+         spawn.SetActive(true);
+         Debug.Log("Ending Routine");
+     }
 }

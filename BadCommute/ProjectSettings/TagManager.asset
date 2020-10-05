@@ -8,6 +8,7 @@ TagManager:
   - door
   - valid_spawn
   - figure
+  - tail_spawn
   layers:
   - Default
   - TransparentFX

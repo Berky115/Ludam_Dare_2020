@@ -226,6 +226,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respawns: []
+  head: 0
 --- !u!1 &3173894164178632053
 GameObject:
   m_ObjectHideFlags: 0
@@ -1068,7 +1069,7 @@ GameObject:
   - component: {fileID: 3173894165214982778}
   m_Layer: 0
   m_Name: spawn
-  m_TagString: Untagged
+  m_TagString: tail_spawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1113,6 +1114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respawns: []
+  head: 0
 --- !u!1 &3173894165265012741
 GameObject:
   m_ObjectHideFlags: 0
