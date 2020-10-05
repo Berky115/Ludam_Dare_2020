@@ -12,6 +12,7 @@ public class Tick_tracker : MonoBehaviour
     public Text interact_prompt;
     public Text current_ticket_prompt;
     public int current_beat;
+    public Ticket current_ticket;
     public string[] story_beats = {
             "Get off the train and go home...",
             "Find a ticket.",
@@ -44,6 +45,28 @@ public class Tick_tracker : MonoBehaviour
 
     public void external_ticket_update(Ticket ticket){
         current_ticket_prompt.text = ticket.description;
+        current_ticket = ticket;
+    }
+
+    public bool external_figure_interact(){
+        if(current_ticket != null){
+        if(current_ticket.name == "Real_ticket") {
+            beat_prompt.text = "Have a seat.";
+            return true;
+        } else if(current_ticket.name == "Void_ticket") {
+            beat_prompt.text = "This ticket is too old to use...";
+            StartCoroutine(FadeImage(true));
+            return false;
+        } else {
+            beat_prompt.text = "This ticket is no good";
+            StartCoroutine(FadeImage(true));
+            return false;
+        } 
+        } else {
+            beat_prompt.text = "You have no tickets...";
+            StartCoroutine(FadeImage(true));
+            return false;
+        }
     }
 
     public void prompt_user(string prompt){
