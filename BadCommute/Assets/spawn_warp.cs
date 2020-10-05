@@ -25,8 +25,8 @@ public class spawn_warp : MonoBehaviour
                  respawns = GameObject.FindGameObjectsWithTag("valid_spawn");
             }
             int rand = Random.Range(0, respawns.Length);
-            respawns[rand].SetActive(false);
-             StartCoroutine(ActivationRoutine(respawns[rand]));
+            respawns[rand].GetComponent<Collider>().enabled = false;
+            StartCoroutine(ActivationRoutine(respawns[rand]));
             other.transform.position = respawns[rand].transform.position;
             
         } else {
@@ -38,8 +38,8 @@ public class spawn_warp : MonoBehaviour
   private IEnumerator ActivationRoutine(GameObject spawn)
      {        
          Debug.Log("STARTING ROUTINE");
-         yield return new WaitForSeconds(3);
-         spawn.SetActive(true);
+         yield return new WaitForSeconds(1);
+         spawn.GetComponent<Collider>().enabled = true;
          Debug.Log("Ending Routine");
      }
 }
