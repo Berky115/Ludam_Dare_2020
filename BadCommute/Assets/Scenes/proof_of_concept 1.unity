@@ -502,7 +502,7 @@ BoxCollider:
   m_GameObject: {fileID: 179991126}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -1539,6 +1539,85 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 624672383}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &767661978
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 767661979}
+  - component: {fileID: 767661981}
+  - component: {fileID: 767661980}
+  m_Layer: 5
+  m_Name: current_ticket_prompt (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &767661979
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 767661978}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 933422892}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 1.6, y: 11.8}
+  m_SizeDelta: {x: 300, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &767661980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 767661978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.5471698, g: 0.5471698, b: 0.5471698, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 15
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: View/Hide [Right Click]
+--- !u!222 &767661981
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 767661978}
+  m_CullTransparentMesh: 0
 --- !u!1001 &800051441
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1662,6 +1741,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: cart_spawn_1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3173894164541826561, guid: ef111016a70dffe4aabe0eafbcc55c46, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3173894164775021211, guid: ef111016a70dffe4aabe0eafbcc55c46, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3173894164942843005, guid: ef111016a70dffe4aabe0eafbcc55c46, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3173894165214982776, guid: ef111016a70dffe4aabe0eafbcc55c46, type: 3}
       propertyPath: m_LocalPosition.z
       value: -18.823
@@ -1689,6 +1780,10 @@ PrefabInstance:
     - target: {fileID: 3173894165214982783, guid: ef111016a70dffe4aabe0eafbcc55c46, type: 3}
       propertyPath: m_TagString
       value: tail_spawn
+      objectReference: {fileID: 0}
+    - target: {fileID: 3173894165337343258, guid: ef111016a70dffe4aabe0eafbcc55c46, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6754397187813839516, guid: ef111016a70dffe4aabe0eafbcc55c46, type: 3}
       propertyPath: m_RootOrder
@@ -1737,7 +1832,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 813196825}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -2021,6 +2116,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 925088359}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &933422892 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 473037606, guid: 338725ae0f896464ebdeabf0f5028f9e, type: 3}
+  m_PrefabInstance: {fileID: 1563361306}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &951074616
 GameObject:
   m_ObjectHideFlags: 0
@@ -2207,6 +2307,26 @@ PrefabInstance:
     - target: {fileID: 3173894164376341883, guid: ef111016a70dffe4aabe0eafbcc55c46, type: 3}
       propertyPath: m_Name
       value: cart_spawn_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3173894164541826561, guid: ef111016a70dffe4aabe0eafbcc55c46, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3173894164775021211, guid: ef111016a70dffe4aabe0eafbcc55c46, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3173894164867372233, guid: ef111016a70dffe4aabe0eafbcc55c46, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3173894164942843005, guid: ef111016a70dffe4aabe0eafbcc55c46, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3173894165337343258, guid: ef111016a70dffe4aabe0eafbcc55c46, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef111016a70dffe4aabe0eafbcc55c46, type: 3}
@@ -2661,13 +2781,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: cart_spawn_1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3173894164541826561, guid: ef111016a70dffe4aabe0eafbcc55c46, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3173894164867372233, guid: ef111016a70dffe4aabe0eafbcc55c46, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3173894164942843005, guid: ef111016a70dffe4aabe0eafbcc55c46, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3173894165214982783, guid: ef111016a70dffe4aabe0eafbcc55c46, type: 3}
       propertyPath: m_TagString
       value: tail_spawn
+      objectReference: {fileID: 0}
+    - target: {fileID: 3173894165337343258, guid: ef111016a70dffe4aabe0eafbcc55c46, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6754397187813839516, guid: ef111016a70dffe4aabe0eafbcc55c46, type: 3}
       propertyPath: m_RootOrder
@@ -2814,7 +2946,7 @@ BoxCollider:
   m_GameObject: {fileID: 1303468000}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -3364,6 +3496,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -32
       objectReference: {fileID: 0}
+    - target: {fileID: 473037606, guid: 338725ae0f896464ebdeabf0f5028f9e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 8267169317244371348, guid: 338725ae0f896464ebdeabf0f5028f9e, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 172
@@ -3426,7 +3562,7 @@ PrefabInstance:
       objectReference: {fileID: 1533677648}
     - target: {fileID: 8267169317253773055, guid: 338725ae0f896464ebdeabf0f5028f9e, type: 3}
       propertyPath: beat_time
-      value: 5
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 8267169317253773055, guid: 338725ae0f896464ebdeabf0f5028f9e, type: 3}
       propertyPath: story_beats.Array.data[8]
