@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: StartTicket
   m_EditorClassIdentifier: 
   ticket_name: Pick up void ticket [Left Click]
-  description: The ticket is no longer valid...
+  description: This ticket expired years ago.  How did this even get here?
   icon: {fileID: 0}

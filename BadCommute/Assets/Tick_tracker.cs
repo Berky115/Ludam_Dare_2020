@@ -13,6 +13,7 @@ public class Tick_tracker : MonoBehaviour
     public Text beat_prompt;
     public Text interact_prompt;
     public Text current_ticket_prompt;
+    public GameObject ticket_view;
     public int current_beat;
     public Ticket current_ticket;
     public string[] story_beats = {
@@ -33,6 +34,7 @@ public class Tick_tracker : MonoBehaviour
         current_beat = 0;
         tick_display.text = "Tick value at :" + tick_value.ToString();
          InvokeRepeating("incrememnt_tick", 0.0f,beat_time);
+        ticket_view = UnityEngine.GameObject.Find("current_ticket");
     }
 
     public void external_tick_update(int value = 5){
@@ -48,6 +50,9 @@ public class Tick_tracker : MonoBehaviour
     public void external_ticket_update(Ticket ticket){
         current_ticket_prompt.text = ticket.description;
         current_ticket = ticket;
+
+        //always show text on ticket pickup
+        ticket_view.SetActive(true); 
     }
 
     public bool external_figure_interact(){
@@ -55,7 +60,9 @@ public class Tick_tracker : MonoBehaviour
         if(current_ticket.name == "valid_ticket") {
             beat_prompt.text = "Have a seat.";
             lightSources.SetActive(false);
-            SceneManager.LoadScene (sceneName:"ending");
+            current_ticket = null;
+            current_ticket_prompt.text = "You gave up your ticket.  Have a seat.";
+            //SceneManager.LoadScene (sceneName:"ending");
             return true;
         } else if(current_ticket.name == "Void_ticket") {
             beat_prompt.text = "This ticket is too old to use...";

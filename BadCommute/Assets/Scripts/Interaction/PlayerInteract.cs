@@ -41,7 +41,7 @@ public class PlayerInteract : MonoBehaviour
                 InteractHover(iteractObject);
 
                 //Interact button was pressed (using "Fire1" for now, should be left mose click.)
-                if (Input.GetButton("Fire1"))
+                if (Input.GetButtonUp("Fire1"))
                 {
                     Interact(iteractObject);
                 }

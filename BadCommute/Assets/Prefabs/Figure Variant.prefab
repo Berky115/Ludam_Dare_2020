@@ -45,9 +45,45 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsPickUp: 0
+  isFigure: 0
   Interact:
     m_PersistentCalls:
       m_Calls: []
+  InteractSuccess:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8400086624576828104}
+        m_TargetAssemblyTypeName: SpawnObject, Assembly-CSharp
+        m_MethodName: SpawnObjectAtTransform
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  InteractFail:
+    m_PersistentCalls:
+      m_Calls: []
+  prompt_manager: {fileID: 0}
+  ticket: {fileID: 0}
+  InteractText: Interact [Left Click]
+--- !u!114 &8400086624576828104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6864384298753039347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c29d1fb6789604faa19eb6492bbac0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectToSpawn: {fileID: 1311098010330836467, guid: b46bd9960589d4f479e99b8cd5549c89, type: 3}
+  SpawnLocation: {fileID: 6055337681993449801}
 --- !u!1001 &6017469871963285154
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -120,5 +156,10 @@ PrefabInstance:
 --- !u!1 &6864384298753039347 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0420e4e568c03b140b87c2130f16c586, type: 3}
+  m_PrefabInstance: {fileID: 6017469871963285154}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6055337681993449801 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0420e4e568c03b140b87c2130f16c586, type: 3}
   m_PrefabInstance: {fileID: 6017469871963285154}
   m_PrefabAsset: {fileID: 0}
