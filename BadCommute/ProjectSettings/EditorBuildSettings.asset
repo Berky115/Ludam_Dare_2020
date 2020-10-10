@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/StartScreen.unity
     guid: 641a2195004deed4e8dabdf1e7950c71
   - enabled: 1
+    path: Assets/Scenes/Prompt_system_test.unity
+    guid: 3ad6905851d98494ea5fda672b671f7f
+  - enabled: 1
     path: Assets/Scenes/proof_of_concept 1.unity
     guid: e8eff9375c6bd8942b690362edcd2377
   - enabled: 1
