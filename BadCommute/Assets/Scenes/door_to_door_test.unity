@@ -789,13 +789,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 791263621}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.9097676, y: 0.095, z: 2.8419027}
+  m_LocalRotation: {x: -0, y: -0.17495492, z: -0, w: 0.9845765}
+  m_LocalPosition: {x: 5.538, y: 0.095, z: 2.2269998}
   m_LocalScale: {x: 0.17468, y: 0.06956718, z: 0.38964573}
   m_Children: []
   m_Father: {fileID: 299584806}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -20.152, z: 0}
 --- !u!114 &791263623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -813,8 +813,15 @@ MonoBehaviour:
   Interact:
     m_PersistentCalls:
       m_Calls: []
+  InteractSuccess:
+    m_PersistentCalls:
+      m_Calls: []
+  InteractFail:
+    m_PersistentCalls:
+      m_Calls: []
   prompt_manager: {fileID: 0}
   ticket: {fileID: 11400000, guid: 50883ae5d24ae1f459110ba1f5dcdcd8, type: 2}
+  InteractText: Interact [Left Click]
 --- !u!65 &791263624
 BoxCollider:
   m_ObjectHideFlags: 0
