@@ -27,15 +27,17 @@ public class Loop_Manager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (playerTransform.position.z > (spawnZ - cartsOnScreen * cartLength)) {
+        if (playerTransform.position.z > (spawnZ - cartsOnScreen * cartLength))
+        {
             SpawnCart();
             destroyCart();
-        // } else if (playerTransform.position.z < (spawnZ - cartsOnScreen * cartLength) - (cartLength-1)){
-        //     Debug.Log("OH NO He'S GOING BACKWARDS!!!!");
-        //     SpawnBackCart();
-        //     DestroyFrontCart();
-        // }
-        
+            // } else if (playerTransform.position.z < (spawnZ - cartsOnScreen * cartLength) - (cartLength-1)){
+            //     Debug.Log("OH NO He'S GOING BACKWARDS!!!!");
+            //     SpawnBackCart();
+            //     DestroyFrontCart();
+            // }
+
+        }
     }
 
     private void SpawnCart(int prefafIndex = -1){
